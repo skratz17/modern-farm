@@ -6,24 +6,24 @@ import { createSunflower } from './sunflower.js';
 import { createWheat } from './wheat.js';
 
 /**
- * Given a plant type, return that plant's corresponding seed factory function (e.g., "Asparagus" -> createAsparagus).
+ * Given a plant type, return that plant type's corresponding seed object.
  * Throws Error if plant type is not recognized as a valid plant type.
- * @param {String} plantType The name of the plant to obtain the seed factory function for.
+ * @param {String} plantType The name of the plant to obtain the seed for.
  */
-export const getSeedFactoryFunction = plantType => {
+export const getSeed = plantType => {
   switch(plantType) {
     case 'Asparagus':
-      return createAsparagus;
+      return createAsparagus();
     case 'Corn':
-      return createCorn;
+      return createCorn();
     case 'Potato':
-      return createPotato;
+      return createPotato();
     case 'Soybean':
-      return createSoybean;
+      return createSoybean();
     case 'Sunflower':
-      return createSunflower;
+      return createSunflower();
     case 'Wheat':
-      return createWheat;
+      return createWheat();
     default:
       throw new Error(`${plantType} is not a valid plant type.`);
   }

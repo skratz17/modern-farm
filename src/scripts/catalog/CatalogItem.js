@@ -5,7 +5,7 @@ export const CatalogItem = item => {
 
   return `
     <section id=${id} class="plant">
-      <img src=${encodeURI(icon)}>
+      <img class="plant__icon" src=${encodeURI(icon)}>
     </section>
   `;
 };

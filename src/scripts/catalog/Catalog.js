@@ -1,3 +1,4 @@
+import { QuantityTable } from '../quantityTable/QuantityTable.js';
 import { CatalogItem } from './CatalogItem.js';
 
 const domNode = document.querySelector('.container');

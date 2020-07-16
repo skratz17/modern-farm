@@ -50,6 +50,10 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #f9f9cc;
 }
 
+.plant__icon {
+    width: 100px;
+}
+
 .quantity-table-wrapper {
     flex-basis: 100%;
     display: flex;

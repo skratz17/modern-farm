@@ -5,8 +5,8 @@ export const QuantityTableRow = plant => {
 
   return `
     <tr class="quantity-table-row">
-      <td class="quantity-table-row__type">${escape(type)}</td>
-      <td class="quantity-table-row__count">${escape(count)}</td>
+      <td class="quantity-table-row__content">${escape(type)}</td>
+      <td class="quantity-table-row__content">${escape(count)}</td>
     </tr>
   `;
 };

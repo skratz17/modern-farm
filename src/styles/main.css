@@ -41,11 +41,36 @@ h1,h2,h3,h4,h5,h6 {
 .container {
     display: flex;
     flex-wrap: wrap;
-    background-color: #f9f9cc;
 }
 
 .plant {
     flex-basis: 20%;
     padding: 2rem;
     text-align: center;
+    background-color: #f9f9cc;
+}
+
+.quantity-table-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.quantity-table {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.quantity-table-header {
+    border-bottom: 2px solid #000;
+}
+
+.quantity-table-header-row__content,
+.quantity-table-row__content {
+    padding: 0.5rem;
+}
+
+.quantity-table-row:nth-child(2n) {
+    background-color: #ddd;
 }

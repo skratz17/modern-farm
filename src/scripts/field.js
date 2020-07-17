@@ -10,19 +10,17 @@ export const addPlant = seed => {
   plants.push(seed);
 };
 
+/**
+ * Return an array of all plant objects in the field.
+ */
 export const usePlants = () => {
   return plants.slice();
 };
 
-export const usePlantsSorted = () => {
-  return sortPlants(plants);
-};
-
 /**
- * Given an array of plant objects, returns a new array of plants sorted alphabetically by type, case-insensitive.
- * @param {Array} plants Array of plant objects to sort 
+ * Return an array of all plant objects in the field, sorted alphabetically and case-insensitively by plant.type.
  */
-const sortPlants = plants => {
+export const usePlantsSorted = () => {
   const sortedPlants = plants.slice();
 
   sortedPlants.sort((plantA, plantB) => 

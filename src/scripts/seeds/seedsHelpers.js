@@ -6,9 +6,9 @@ import { createSunflower } from './sunflower.js';
 import { createWheat } from './wheat.js';
 
 /**
- * Given a plant type, return that plant type's corresponding seed object.
+ * Given a plant type, return a new seed object for that plant type.
  * Throws Error if plant type is not recognized as a valid plant type.
- * @param {String} plantType The name of the plant to obtain the seed for.
+ * @param {String} plantType The type of the plant to obtain the seed for.
  */
 export const getSeed = plantType => {
   switch(plantType) {

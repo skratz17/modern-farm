@@ -20,8 +20,7 @@ const getCounts = harvest => {
   harvest.forEach(plant => {
     const { type } = plant;
 
-    const count = counts[type] ? counts[type] + 1 : 1;
-    counts[type] = count;
+    counts[type] = counts[type] + 1 || 1;
   });
 
   return counts;
